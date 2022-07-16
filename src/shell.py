@@ -2,7 +2,7 @@ import core
 
 while True:
     text = input('kscript > ')
-    if input == "break": break
-    result, error = core.run(text)
+    if text == "break": break
+    result, error = core.run('<stdin>', text)
     if error: print(error.as_string())
     else: print(result)
