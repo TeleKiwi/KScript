@@ -19,7 +19,7 @@ class Error:
 
 class IllegalCharacterError(Error):
     def __init__(self, details):
-        super().init('Error: illegal character', details)
+        super().__init__('Error: illegal character', details)
 #########################################
 # TOKENS
 #########################################
